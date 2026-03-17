@@ -89,6 +89,9 @@ for (var i = 3; i <= 3; i++) {
         console.log(i + " * " + k + " = " + i*k);
     }
 }
+for (var i = 1; i <= 9; i++) {
+    console.log(3*i);
+}
 
 // 3 1부터 100까지의 숫자 중 짝수의 합
 var mol = 0;
@@ -104,7 +107,7 @@ var str = "JavaScript";
 var result = "";
 for (var i = str.length - 1; i >= 0; i--) {
     result = result + str[i];  // result += str[i]
-   // str.length = 10
+   // str.length = 10 ( 자릿수는 10 = 컴퓨터가 인식하는 인덱스 숫자 0~9 )
 }
 console.log(result);
 
