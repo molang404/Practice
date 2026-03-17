@@ -72,3 +72,47 @@ for (var i = 0; i < text.length; i++) {
     }
 }
 console.log(result);
+
+// 3월 17일 연습 문제
+
+// 1 1부터 20 사이의 숫자 중 홀수만 출력
+for (var i = 1; i <= 20; i++) {
+    if (i % 2 === 1) {
+        console.log(i);
+    }
+}
+
+// 2 구구단 중 3단 출력
+for (var i = 3; i <= 3; i++) {
+
+    for (var k = 1; k <= 9; k++) {
+        console.log(i + " * " + k + " = " + i*k);
+    }
+}
+
+// 3 1부터 100까지의 숫자 중 짝수의 합
+var mol = 0;
+for (var i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        mol = mol + i;
+    }
+}
+console.log(mol);
+
+// 4 var str = "Javascript" 를 역순으로 출력
+var str = "JavaScript";
+var result = "";
+for (var i = str.length - 1; i >= 0; i--) {
+    result = result + str[i];  // result += str[i]
+   // str.length = 10
+}
+console.log(result);
+
+//5 1부터 100까지의 숫자 중 4의 베수가 몇 개인지 출력
+var mol2 = 0;
+for (var i = 1; i <= 100; i++) {
+    if (i % 4 === 0) {
+        mol2++;
+    }
+}
+console.log(mol2);
