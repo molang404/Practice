@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>인라인 (inline) 요소</span>
+<br />
+<div>block 요소&nbsp;</div>
+
+<strong></strong>
+<mark></mark>
+
+<ul>
+  <li></li>
+</ul>
+
+<ol>
+  <li></li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>제목 셀 묶음</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>제목 외 셀 묶음</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 2개 셀 합치기 -->
+<table>
+  <thead>
+  <tr>
+    <th>카페</th>
+    <th>PC방</th>
+    <th>노래방</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>음식</td>
+      <td colspan="2">유희</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 2개 행 합치기
+-->
+  <table>
+    <thead>
+      <tr>
+        <th>PC방</th>
+        <th>카페</th>
+        <th>노래방</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">음식 <br />유희</td>
+        <td>음식</td>
+        <td>유희</td>
+      </tr>
+      <tr>
+        <td>음식</td>
+        <td>유희</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4bT6eMfiWNabBbGz8mmZG4Yl1vNv2xlM0RIFcxHjTMazbxYeye_NImv6K3sqNYcW4yA5_EOEkoR30i5TkGUzbovDNaKf0rd4aD54m8O_&s=10"
+  alt="몰랑이 이미지" />
+
+  <a href="https://www.google.com" target="_self">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4bT6eMfiWNabBbGz8mmZG4Yl1vNv2xlM0RIFcxHjTMazbxYeye_NImv6K3sqNYcW4yA5_EOEkoR30i5TkGUzbovDNaKf0rd4aD54m8O_&s=10"
+      alt="몰랑이 이미지">
+  </a>
+ <!--
+      form : 사용자에게 입력받기 위한 태그들을 묶는 태그
+      input 태그 : 실질적으로 사용자에게 입력받가 위한 태그
+                  필수 속성: type : 어떤 형태로 입력 받을 것인지
+ -->
+  <form>
+    <input type="text" /><br />
+    <input type="password" /><br />
+    <input type="checkbox" /><br />
+    <input type="email" /><br />
+    <input type="date" /><br />
+    <input type="file" /><br />
+    <input type="radio" name="gender" /> 남자 <input type="radio" name="gender" />여자<br/>
+    <input type="tel" /><br />
+    <input type="number" /><br />
+    <input type="color" /><br />
+<!--
+    label 태그 : input, select 태그와 짝꿍
+                해당 input이 무엇을 입력 받으려고 하는지 알려주는 기능도 함
+-->
+    <label>
+        회원ID<br />
+        <input type="text" />
+    </label><br />
+
+    <label for="userId">회원ID</label><br />
+        <input type="text" id="userId" /><br />
+    <!--
+        select 태그 : 사용자에게 펼칠 메뉴를 통해 선택 받을 수 있게 함
+        option 태그 : 셀렉 태그의 자식 요소, 각각 항목 설정 태그
+            - 필수 속성 : value - 실제로 사용되는 값
+            - 속성 : selected - 선택된 항목 표시
+    -->
+
+  </form>
+</body>
+</html>
+

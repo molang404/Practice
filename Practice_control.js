@@ -107,7 +107,7 @@ var str = "JavaScript";
 var result = "";
 for (var i = str.length - 1; i >= 0; i--) {
     result = result + str[i];  // result += str[i]
-   // str.length = 10 ( 자릿수는 10 = 컴퓨터가 인식하는 인덱스 숫자 0~9 )
+   // str.length = 10 ( 자릿수는 10 = 컴퓨터가 인식하는 인덱스 숫자 0~9 dc6)
 }
 console.log(result);
 
