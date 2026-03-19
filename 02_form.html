@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    form 태그는 input을 묶어서 한꺼번에 전송할 때 묶는 역할
+    2가지 방식
+    GET 방식
+        - 주소줄에 내용을 전달 (보안 x)
+    POST 방식
+        - 주소줄 말고, body에 내용 전달 (보안 o, 민감한 정보)
+-->
+<h1>GET 방식</h1>
+<form method="get" action="https://postman-echo.com/get"><br />
+    <label>이름:<input type="text" name="name" /></label>
+    <label>이메일:<input type="email" name="email"</label>
+    <label>비밀번호:<input type="password" name="password" /></label>
+    <button type="button">전송</button>
+  <!--
+    button : 동작만 하는 버튼
+    submit : 전송되는 버튼 (기본값)
+  -->
+</form>
+
+<h1>POST 방식</h1>
+<form method="post" action="https://postman-echo.com/post"><br />
+    <label>이름:<input type="text" name="name" /></label>
+    <label>이메일:<input type="email" name="email" /></label>
+    <label>비밀번호:<input type="password" name="password"></label>
+    <button>전송</button>
+</form>
+
+</body>
+</html>
