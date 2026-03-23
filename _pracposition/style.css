@@ -1,0 +1,63 @@
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.box {
+    padding: 15px;
+    background-color: #f35252;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sticky {
+    position: sticky;
+    background-color: #2ecc71;
+}
+
+.style {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+}
+
+.scroll {
+    margin: 15px;
+    display: flex;
+    padding: 200px;
+    background-color: #e9ecef;
+    color: #adb5bd;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #e9ecef;
+    border: 2px dashed #adb5bd;
+}
+
+.child-box {
+    position: absolute;
+    top: -25px;
+    right: -20px;
+    background-color: #399af1;
+}
